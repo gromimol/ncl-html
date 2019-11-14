@@ -1,1 +1,286 @@
 /*Header*/ 
+.header{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	padding: 30px 0;
+	transition: background-color .3s;
+	z-index: 3;
+	.container{
+		max-width: 1640px;
+	}
+}
+.logo{
+	margin-right: 3em;
+	img{
+		width: 12.5em;
+	}
+}
+.site-title{
+	font-size: .9375rem;
+	text-transform: uppercase;
+	line-height: 1.3;
+}
+.site-title__top{
+	display: block;
+	font-size: 1.6em;
+}
+.header__contact{
+	font-size: 1rem;
+	line-height: 1.3;
+	margin-right: 4.625em;
+	a{
+		display: block;
+		font-size: 1.5em;
+		pointer-events: none;
+  		cursor: default;
+	}
+}
+
+.callback{
+	display: inline-flex;
+	align-items: center;
+	border: 1px solid #262b55;
+	border-radius: 3px;
+	padding: 1.125em 1.875em 1em .75em;
+	&:hover{
+		background-color: var(--blue);
+		color: #fff;
+		border-color: var(--blue);
+		.ico{
+			animation: swing .3s infinite;
+			color: currentColor;
+		}
+	}
+	.ico{
+		color: var(--green);
+		margin-right: 2.25em;
+		margin-top: -1px;
+	}
+}
+
+.menu-btn{
+	margin-left: 4.875em;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: all .3s;
+	&:hover{
+		color: var(--blue);
+		.burger{
+			span{
+				&:nth-child(2){
+					width: 50%;
+				}
+			}
+		}
+	}
+	.text{
+		font-size: .875em;
+		text-transform: uppercase;
+		transform: translateY(2px);
+		margin-right: 4px;
+	}
+}
+.burger{
+	flex: none;
+	width: 36px;
+	span{
+		display: block;
+		height: 2px;
+		width: 100%;
+		background-color: #262b55;
+		transition: all .3s;
+		&:not(:last-child){
+			margin-bottom: 8px;
+		}
+	}
+}
+.mobile-menu{
+	position: fixed;
+	background-color: #fff;
+	width: 90%;
+	max-width: 370px;
+	right: 0;
+	top: 0;
+	height: 100%;
+	transform: translateX(120%);
+	visibility: hidden;
+	transition: all .3s;
+	z-index: 25;
+	&.active{
+		transform: translateX(0);
+		visibility: visible;
+	}
+	.menu{
+		margin-bottom: 40px;
+		li{
+			&:first-child{
+				a{
+					border-top: 1px solid #d4f3f9;
+				}
+			}
+			a{
+				display: block;
+				font-size: 24px;
+				padding: 1em 40px 1em 45px;
+				border-bottom: 1px solid #d4f3f9;
+				&:active{
+					border-bottom-color: var(--blue);
+				}
+			}
+		}
+	}
+	.header__contact{
+		font-size: 16px;
+		display: table;
+		margin: 0 auto;
+		position: relative;
+		margin-bottom: 40px;
+		&::before{
+			content: '';
+			width: 18px;
+			height: 18px;
+			background:transparent url('../img/icons/phone.svg') left top no-repeat;
+			background-size: contain;
+			position: absolute;
+			left: -30px;
+			top: 4px;
+		}
+	}
+	.btn-container{
+		display: flex;
+		justify-content: center;
+	}
+	.callback{
+		font-size: 16px;
+		width: auto;
+		height: auto;
+		padding: 18px 30px 15px 12px;
+		.text{
+			display: block;
+		}
+		.ico{
+			margin-right: 35px;
+		}
+	}
+}
+.mobile-menu__top{
+	font-size: 24px;
+	padding: 50px 40px 50px 45px;
+}
+.close{
+	width: 22px;
+	height: 22px;
+	color: #262b55;
+	svg{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+.header__center{
+	flex-grow: 1;
+	position: absolute;
+	opacity: 0;
+	visibility: hidden;
+	.menu{
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		li{
+			padding: 0 1em;
+			height: 100%;
+			display: flex;
+			a{
+				display: flex;
+				align-items: center;
+				height: 100%;
+				position: relative;
+				font-weight: 700;
+				text-transform: uppercase;
+				font-size: .8125em;
+				&::after{
+					content: '';
+					width: 100%;
+					height: 3px;
+					background-color: #4ecde5;
+					position: absolute;
+					left: 0;
+					top: calc(100% + 28px);
+					opacity: 0;
+					transition: all .3s;
+				}
+				&:hover{
+					&::after{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.header-fixed{
+	.header__center{
+		position: relative;
+		opacity: 1;
+		visibility: visible;
+	}
+	.header{
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 4px 20px rgba(#000, .1);
+	}
+	.site-title,
+	.menu-btn{
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes swing {
+  20% {
+    -webkit-transform: rotate3d(0, 0, 1, 15deg);
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    -webkit-transform: rotate3d(0, 0, 1, -10deg);
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    -webkit-transform: rotate3d(0, 0, 1, 5deg);
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    -webkit-transform: rotate3d(0, 0, 1, -5deg);
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  to {
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

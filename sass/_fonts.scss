@@ -1,13 +1,100 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansRegular.woff") format("woff");
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-SemiBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 600;
+}
+@font-face {
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Regular.woff") format("woff");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansBold.woff") format("woff");
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Light.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+@font-face {
+	font-family: "PFBeauSansPro";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Thin.woff") format("woff");
+	font-style: normal;
+	font-weight: 200;
+}
+@font-face {
+	font-family: "PFBeauSansPro-Book";
+	src: url("../font/PFBeauSansPro/PFBeauSansPro-Bbook.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto/Roboto-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto/RobotoBold.woff") format("woff");
 	font-style: normal;
 	font-weight: 700;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto/Roboto-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto/Roboto.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+@font-face {
+	font-family: "Roboto";
+	src: url("../font/Roboto/Roboto-Light.woff") format("woff");
+	font-style: normal;
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "PTSans";
+	src: url("../font/PT-Sans/PTSans-Bold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "PTSans";
+	src: url("../font/PT-Sans/PTSans-Regular.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "PTSans-Narrow";
+	src: url("../font/PT-Sans-Narrow/PTSans-NarrowBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "PTSans-Narrow";
+	src: url("../font/PT-Sans-Narrow/PTSans-Narrow.woff") format("woff");
+	font-style: normal;
+	font-weight: 400;
 }
 

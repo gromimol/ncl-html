@@ -22,6 +22,19 @@ $(document).ready(function () {
 		$('body').removeClass('noscroll');
 		$('.mobile-menu').removeClass('active');
 		$('#overlay').hide();
+	});
+
+	// tab
+	$('.price-tab-list').on('click', 'a', function (e) {
+		e.preventDefault();
+
+		var id = $(this).attr('data-id');
+
+		$('.price-tab-list a').removeClass('active');
+		$(this).addClass('active');
+
+		$('.tab-content').removeClass('active');
+		$('#' + id).addClass('active');
 	})
 
 

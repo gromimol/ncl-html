@@ -1234,7 +1234,8 @@ b {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    padding: 10px; }
 
   .price-tab-list,
   .tab-content-wrapper {
@@ -1304,7 +1305,8 @@ b {
     text-align: center; }
 
   .price-tab-list {
-    overflow-x: auto; }
+    overflow-x: auto;
+    overflow-y: hidden; }
     .price-tab-list li {
       min-width: 140px;
       min-height: 5em; }

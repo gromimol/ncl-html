@@ -151,6 +151,7 @@
 	}
 	.price-container{
 		flex-direction: column;
+		padding: 10px;
 	}
 	.price-tab-list,
 	.tab-content-wrapper{
@@ -224,6 +225,7 @@
 	}
 	.price-tab-list{
 		overflow-x: auto;
+		overflow-y: hidden;
 		li{
 			min-width: 140px;
 			min-height: 5em;

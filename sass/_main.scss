@@ -122,6 +122,9 @@ a{
 .h4{
 	font-size: 1.5rem;
 }
+.h5{
+	font-size: 1.125em;
+}
 b{
 	font-weight: 700;
 }
@@ -203,6 +206,14 @@ b{
 			transform: translateY(-50%);
 		}
 	}
+	&--lt{
+		.ico{
+			width: 5.0625em;
+			height: 5.875em;
+			left: -1.2em;
+			top: 10%;
+		}
+	}
 }
 .blue{
 	color: var(--blue);
@@ -239,10 +250,34 @@ b{
 	width: 90%;
 	margin: 0 auto;
 }
-::-webkit-input-placeholder {  }
-::-moz-placeholder          {  } /* Firefox 19+ */
-:-moz-placeholder           {  } /* Firefox 18- */
-:-ms-input-placeholder      {  }
+.block-title{
+	font-family: var(--pfbeausans-book);
+	padding-left: 5em;
+	position: relative;
+}
+.block-title__counter{
+	font-size: 1.125em;
+	font-family: var(--pfbeausans);
+	position: absolute;
+	left: 0;
+	top: .8em;
+	&::after{
+		content: '';
+		width: 1.6em;
+		height: 1px;
+		background-color: #1c1e2b;
+		position: absolute;
+		left: calc(100% + .5em);
+		top: .35em;
+	}
+}
+.block-subtitle{
+	font-size: 1.875rem;
+}
+::-webkit-input-placeholder {font-family: var(--pfbeausans);font-size: 16px;color: #252734;  }
+::-moz-placeholder          {font-family: var(--pfbeausans);font-size: 16px;color: #252734;  } /* Firefox 19+ */
+:-moz-placeholder           {font-family: var(--pfbeausans);font-size: 16px;color: #252734;  } /* Firefox 18- */
+:-ms-input-placeholder      {font-family: var(--pfbeausans);font-size: 16px;color: #252734;  }
 
 // Для стилей автозаполнения полей
 // @-webkit-keyframes autofill {

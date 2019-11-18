@@ -51,6 +51,12 @@ $(document).ready(function () {
 	// mask
 	$("#phone,#phone2").mask("+7(999) 999-9999");
 
+	// slider
+	$('.price-slider').slick({
+		prevArrow: '<span class="prev-arrow"></span>',
+		nextArrow: '<span class="next-arrow"></span>',
+		adaptiveHeight: true
+	});
 
 	// counter
 	function timer(f) {

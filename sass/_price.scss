@@ -110,8 +110,63 @@
 	}
 }
 
-
-
+.price-slider{
+	height: 0;
+	overflow: hidden;
+	.slick-arrow{
+		position: absolute;
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		background-color: #3fc0f0;
+		background-repeat: no-repeat;
+		background-position: center;
+		top: 35px;
+		z-index: 2;
+	}
+	.prev-arrow{
+		left: 30px;
+		background-image: url('../img/icons/arrow_left.png');
+	}
+	.next-arrow{
+		right: 30px;
+		background-image: url('../img/icons/arrow_right.png');
+	}
+}
+.price-slider__table{
+	border: 1px solid #dedede;
+	padding: 15px;
+	background-color: #f6f6f7;
+}
+.price-slider__title{
+	font-size: 16px;
+	text-align: center;
+	height: 92px;
+	background-color: var(--blue-dark);
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-weight: 700;
+}
+.price-slider__item{
+	border-bottom: 1px solid #e0e0e0;
+	background-color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	padding: 25px 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&:last-child{
+		border-bottom: none;
+	}
+	.blue{
+		color: #0e71b8;
+		font-size: 1.125em;
+	}
+}
 
 
 

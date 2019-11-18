@@ -336,8 +336,15 @@
 			display: none;
 		}
 	}
+	.price-container{
+		display: none;
+	}
 	.price-table{
 		font-size: 1.5rem;
+	}
+	.price-slider{
+		height: auto;
+		overflow: visible;
 	}
 	.video__title{
 		margin-left: 0;
@@ -721,6 +728,11 @@
 	.form-content .btn{
 		font-size: 13px;
 	}
+	.more{
+		min-width: auto;
+		padding-left: 2em;
+		padding-right: 2em;
+	}
 }
 /*767*/ 
 @media(max-width: 480px){
@@ -766,6 +778,11 @@
 	}
 	.sale-block{
 		padding: 0;
+	}
+	.price-slider__title{
+		padding: 0 80px;
+		text-align: center;
+		line-height: 1.4;
 	}
 }
 /*480*/ 
@@ -840,7 +857,11 @@
 		font-size: 16px;
 		width: 100%;
 	}
-
+	.price-slider__item{
+		font-size: 14px;
+	}
+	.price-slider__item .blue{
+	}
 }
 /*440*/ 
 
@@ -888,5 +909,27 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+	}
+	.form-content .btn{
+		font-size: 12px;
+	}
+	.price-slider__table{
+		padding: 0;
+		border: none;
+	}
+	.price-slider .slick-arrow{
+		width: 45px;
+		height: 45px;
+		top: 18px;
+	}
+	.price-slider__title{
+		height: 80px;
+		padding: 0 60px;
+	}
+	.price-slider .next-arrow{
+		right: 10px;
+	}
+	.price-slider .prev-arrow{
+		left: 10px;
 	}
 }

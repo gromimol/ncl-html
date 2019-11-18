@@ -2766,7 +2766,10 @@ b {
     font-size: 12px; }
 
   .review-body {
-    width: 50%; } }
+    width: 50%; }
+
+  .sale-block {
+    padding: 0; } }
 /*480*/
 @media (max-width: 440px) {
   .header__contact {

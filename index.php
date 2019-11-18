@@ -1422,8 +1422,50 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.countdown.js"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
 <script src="js/common.js"></script>
+
+
+<script>
+	$(function () {    
+		$(".form").submit(function (e) {
+			e.preventDefault();
+			var form_data = $(this).serialize(); 
+			$.ajax({
+				type: "POST", 
+				url: "/index.php",
+      			data: form_data
+  				}).done(function (data) {
+  					$('.form').addClass('opacity');
+  					$('.thanks-popup').addClass('active');
+  				}).fail(function (data) {
+  					$('.form').removeClass('opacity');
+  					$('.thanks-popup').removeClass('active');
+  				});
+			}); 
+	});
+</script>
+
+<?php
+
+if (isset($_POST["name"]) && isset($_POST["email"]) && isset($_POST["message"]) ) { 
+
+
+
+	$to = 'gromimol@ukr.net';
+	$subject = 'NCL';
+    $result = array(
+    	'name' => $_POST["name"],
+    	'email' => $_POST["email"],
+    	// 'message' => $_POST["message"]
+    ); 
+
+    mail($to, $subject, implode(PHP_EOL, $result) );
+}
+
+?>
 </body>
 </html>

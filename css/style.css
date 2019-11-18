@@ -2723,7 +2723,10 @@ b {
     .webmaster::before {
       left: 50%;
       top: -15px;
-      margin-left: -6px; } }
+      margin-left: -6px; }
+
+  .form-content .btn {
+    font-size: 13px; } }
 /*767*/
 @media (max-width: 480px) {
   .main-screen__features {

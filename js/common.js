@@ -22,6 +22,7 @@ $(document).ready(function () {
 		$('body').removeClass('noscroll');
 		$('.mobile-menu').removeClass('active');
 		$('.popup').removeClass('active');
+		$('.main-popup').removeClass('active');
 		$('#overlay').hide();
 	});
 
@@ -42,6 +43,26 @@ $(document).ready(function () {
 		$('.mobile-menu').removeClass('active');
 		$('#overlay').show();
 		$('.popup').addClass('active');
+	});
+
+	$('.js--main-popup').on('click',function (e) {
+        e.preventDefault();
+
+        $('.main-popup').addClass('active');
+        $('body').addClass('noscroll');
+    });
+
+	// Демонстрация работы попапа с текстом благодарности
+	$('.submit').on('click', function () {
+		// e.preventDefault();
+
+		// $('.popup').removeClass('active');
+		// $('.thanks').addClass('active');
+		// setTimeout(function () {
+		// 	$('body').removeClass('noscroll');
+		// 	$('.thanks').removeClass('active');
+		// 	$('#overlay').hide();
+		// }, 2000);
 	})
 
 	// tab
@@ -69,7 +90,7 @@ $(document).ready(function () {
 	 $(".fancybox").fancybox();
 
 	// mask
-	$("#phone,#phone2").mask("+7(999) 999-9999");
+	$("#phone,#phone2, #phone3, #phone4").mask("+7(999) 999-9999");
 
 	// slider
 	$('.price-slider').slick({
@@ -77,6 +98,8 @@ $(document).ready(function () {
 		nextArrow: '<span class="next-arrow"></span>',
 		adaptiveHeight: true
 	});
+
+
 
 	// counter
 	function timer(f) {

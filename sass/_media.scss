@@ -38,6 +38,29 @@
 	.features-section-list{
 		padding: 0 50px;
 	}
+	.book-lg{
+		width: 56em;
+		right: -15em;
+	}
+	.main-popup{
+		overflow-y: auto;
+		height: auto;
+		min-height: 100vh;
+		.input{
+			height: 55px;
+		}
+	}
+	.main-popup__content{
+		overflow-y: auto;
+		height: 100vh;
+		display: block;
+		padding: 50px 0 50px 6.5em;
+	}
+	.main-popup__content__descr{
+		.h4{
+			margin: .5em;
+		}
+	}
 }
 /*1450*/
 @media(max-width: 1360px){
@@ -84,6 +107,44 @@
 	}
 	.total__descr{
 		width: calc(100% - 48em)
+	}
+	.main-popup__img{
+		display: none;
+	}
+	.main-popup__content{
+		width: 100%;
+		padding: 50px 40px;
+	}
+	.main-popup__content__descr{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.h4{
+			font-size: 24px;
+		}
+		.h5{
+			font-size: 16px;
+		}
+	}
+	.list{
+		font-size: 16px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+	}
+	.main-popup{
+		.form{
+			margin: 0 auto;
+		}
+	}
+	.main-popup .input{
+		height: 65px;
+	}
+	.list li{
+		padding-left: 1.5em;
+		
 	}
 }
 /*1360*/ 
@@ -756,6 +817,12 @@
 		min-width: auto;
 		padding-left: 2em;
 		padding-right: 2em;
+	}
+	.main-popup__content{
+		padding: 50px 10px;
+	}
+	.title .h2{
+		font-size: 30px;
 	}
 }
 /*767*/ 

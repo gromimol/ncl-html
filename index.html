@@ -109,7 +109,8 @@
 
 						<div class="btn-lg-container">
 							<div class="decor"></div>
-							<a href="#" class="btn btn--green btn--lg">
+							<a href="#" class="btn btn--green btn--lg js--main-popup">
+								<span class="blick"></span>
 								<span class="ico">
 									<img src="img/icons/book-ico_lg.png" alt="">
 								</span>
@@ -164,7 +165,8 @@
 
 					<div class="btn-lg-container mobile">
 							<div class="decor"></div>
-							<a href="#" class="btn btn--green btn--lg">
+							<a href="#" class="btn btn--green btn--lg js--main-popup">
+								<span class="blick"></span>
 								<span class="ico">
 									<img src="img/icons/book-ico_lg.png" alt="">
 								</span>
@@ -706,14 +708,15 @@
 									</div>
 									<form action="#">
 										<div class="input-wrapper">
-											<input type="text" class="input" id="phone" placeholder="+7(___) ___ __ __">
+											<input type="text" class="input" id="phone" placeholder="+7(___) ___ __ __" required>
 										</div>
 
 										<div class="input-wrapper">
-											<input type="text" class="input" placeholder="Введите вашу почту:">
+											<input type="email" class="input" placeholder="Введите вашу почту:" required>
 										</div>
 
 										<button type="submit" class="btn btn--green btn--lt">
+											<span class="blick"></span>
 											<span class="ico">
 												<img src="img/icons/book-ico_sm.png" alt="">
 											</span>
@@ -1148,14 +1151,15 @@
 								</div>
 								<form action="#">
 									<div class="input-wrapper">
-										<input type="text" class="input" id="phone2" placeholder="+7(___) ___ __ __">
+										<input type="text" class="input" id="phone2" placeholder="+7(___) ___ __ __" required>
 									</div>
 
 									<div class="input-wrapper">
-										<input type="text" class="input" placeholder="Введите вашу почту:">
+										<input type="email" class="input" placeholder="Введите вашу почту:" required>
 									</div>
 
 									<button type="submit" class="btn btn--green btn--lt">
+										<span class="blick"></span>
 										<span class="text">
 											<span class="text-top">
 												Получить индивидуальный план
@@ -1260,11 +1264,11 @@
 
 				<form action="#">
 					<div class="input-wrapper">
-						<input type="text" class="input" id="phone3" placeholder="+7(___) ___ __ __">
+						<input type="text" class="input" id="phone3" placeholder="+7(___) ___ __ __" required>
 					</div>
 
 					<div class="input-wrapper">
-						<input type="text" class="input" placeholder="Введите вашу почту:">
+						<input type="email" class="input" placeholder="Введите вашу почту:" required>
 					</div>
 
 					<button type="submit" class="submit">
@@ -1281,8 +1285,21 @@
 					</div>
 				</form>
 			</div>
+
 		</div>
 		<!-- /.popup popup--callback -->
+
+		<div class="thanks">
+			<div class="ico">
+				<svg>
+					<use xlink:href="#svg-check"></use>
+				</svg>
+			</div>
+			<div class="text">
+				Спасибо! Ваша заявка принята, в ближайшее время <br>
+				с вами свяжется наш менеджер.
+			</div>
+		</div>
 
 		<!-- mobile menu -->
 		<div class="mobile-menu">
@@ -1323,6 +1340,79 @@
 						Заказать обратный звонок
 					</span>
 				</a>
+			</div>
+		</div>
+
+		<!-- main popup -->
+		<div class="main-popup flex">
+			<div class="main-popup__img">
+				<img src="img/bg/book-lg.png" alt="" class="book-lg">
+			</div>
+			<div class="main-popup__content">
+				<div class="close-popup">
+					<svg>
+						<use xlink:href="#svg-close"></use>
+					</svg>
+				</div>
+
+				<div class="main-popup__content__descr">
+					<div class="h4">
+						<b>
+							Сегодня лучший день для вступления<br> в СРО проектировщиков 
+						</b>
+					</div>
+					<div class="h4">
+						<b>
+							Почему? 
+						</b>
+						<span class="h5">Вас ждут 4 подарка стоимостью 67 000 рублей:</span>
+					</div>
+
+					<ul class="list">
+						<li>1. Отсрочка внесения специалистов НРС на 6 месяцев </li>
+						<li>2. Страховка на 2 000 000 рублей </li>
+						<li>3. Сертификат ISO 9001</li>
+						<li>4. Повышение квалификации специалиста</li>
+					</ul>
+				</div>
+
+				<div class="form">
+					<div class="form-content">
+						<form action="#">
+							<div class="input-wrapper">
+								<input type="text" class="input" id="phone4" placeholder="+7(___) ___ __ __" required="">
+							</div>
+
+							<div class="input-wrapper">
+								<input type="email" class="input" placeholder="Введите вашу почту:" required="">
+							</div>
+
+							<button type="submit" class="btn btn--green btn--lt">
+								<span class="blick"></span>
+								<span class="ico">
+									<img src="img/icons/book-ico_sm.png" alt="">
+								</span>
+								<span class="text">
+									<span class="text-top">
+										Получить индивидуальный план
+									</span>
+									<span class="text-bottom">
+										вступления в СРО и подарки
+									</span>
+								</span>
+							</button>
+
+							<div class="agree">
+								<input type="checkbox" id="agree" checked="">
+								<label for="agree">
+									<span class="agree-text">
+										Нажимая кнопку "Пройти аудит бесплатно", я даю своё согласие на обработку моих <a href="#">персональных данных</a> в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ "О персональных данных", на условияхи для целей, определённых в <a href="#">Согласии на обработку персональных данных</a>.
+									</span>
+								</label>
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div><!-- end wrapper -->

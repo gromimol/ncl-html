@@ -189,7 +189,8 @@ b{
 	&--green{
 		background: var(--green-gradient);
 		border-bottom-color: #2a8a63;
-		box-shadow: 0 4px 0 #245450;
+		box-shadow: 0 4px 0 #245450,
+					0 15px 20px rgba(#000, .2);
 		&:hover{
 			background:var(--blue-gradient);
 			border-bottom-color: #3880ac;

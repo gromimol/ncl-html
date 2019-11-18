@@ -51,6 +51,7 @@ $(document).ready(function () {
 	// mask
 	$("#phone,#phone2").mask("+7(999) 999-9999");
 
+
 	// counter
 	function timer(f) {
         var date = new Date(f);

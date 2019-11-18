@@ -187,6 +187,30 @@
 	.footer__phone{
 		margin-right: 0;
 	}
+	.popup{
+		max-width: 90%;
+		max-height: 90vh;
+		overflow-y: auto;
+	}
+	.close-popup{
+		width: 30px;
+		height: 30px;
+		transform: translate(0, 0);
+		svg{
+			width: 14px;
+			height: 14px;
+		}
+	}
+	.popup__title{
+		font-size: 20px;
+		height: 80px;
+		margin-bottom: 30px;
+	}
+	.submit{
+		height: 55px;
+		width: 85%;
+		font-size: 14px;
+	}
 }
 /*1023*/ 
 

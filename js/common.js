@@ -18,11 +18,31 @@ $(document).ready(function () {
 		$('#overlay').show();
 	});
 
-	$('#overlay, .close').on('click',function () {
+	$('#overlay, .close, .close-popup').on('click',function () {
 		$('body').removeClass('noscroll');
 		$('.mobile-menu').removeClass('active');
+		$('.popup').removeClass('active');
 		$('#overlay').hide();
 	});
+
+	$('.js--popup').on('click',function (e) {
+		e.preventDefault();
+
+		var popupType = $(this).attr('data-popup');
+
+		if(popupType === 'consult'){
+			$('.popup__title').html('Получить консультацию<br> менеджера');
+			$('.submit span').html('Получить консультацию');
+		}else{
+			$('.popup__title').html('Заказать обратный звонок');
+			$('.submit span').html('отправить');
+		}
+
+		$('body').addClass('noscroll');
+		$('.mobile-menu').removeClass('active');
+		$('#overlay').show();
+		$('.popup').addClass('active');
+	})
 
 	// tab
 	$('.price-tab-list').on('click', 'a', function (e) {

@@ -11,6 +11,17 @@
 		width: 36em;
 		bottom: 7.5em;
 	}
+	.girl{
+		width: 22em;
+		left: -6em;
+	}
+	.office-list{
+		top: 0em;
+		right: 14px;
+	}
+	.map-body{
+		transform: translate(1em, 20px);
+	}
 }
 @media(max-width: 1600px){
 	html{
@@ -27,6 +38,17 @@
 	.features-section__top{
 		padding-left: 4em;
 		padding-right: 4em;
+	}
+	.girl{
+		width: 20em;
+		left: 0;
+	}
+	.form-content .btn{
+		padding-right: 3em;
+		border-top: none;
+		border-left: none;
+		border-right: none;
+
 	}
 }
 /*1600*/ 
@@ -145,6 +167,15 @@
 	.list li{
 		padding-left: 1.5em;
 		
+	}
+	.girl{
+		left: 1em;
+	}
+	.office-list,
+	.office-data,
+	.office-data__top,
+	.office-data__item{
+		font-size: 1.25rem;
 	}
 }
 /*1360*/ 
@@ -601,10 +632,11 @@
 	}
 	.review-row{
 		flex-wrap: wrap;
-		margin: 0 -10px 40px;
+		margin: 0 -10px 0;
 	}
 	.more{
 		font-size: 15px;
+		margin-top: 30px;
 	}
 	.review-body{
 		width: 25%;
@@ -639,13 +671,48 @@
 	.footer__left .blue-link{
 		margin-left: 3.5em;
 	}
+	.office-data{
+		left: 30px;
+		width: 100%;
+		max-width: 340px;
+	}
+	.office-list, .office-data, .office-data__top, .office-data__item{
+		font-size: 14px;
+	}
+	.office-list{
+		position: relative;
+		left: 0;
+		top: 0;
+	}
+	.office-list{
+		display: none;
+	}
+	.map-container{
+		.for-mobile,{
+			display: block;
+			.office-list{
+				display: block;
+				width: 100%;
+				max-width: 420px;
+				margin: 0 auto;
+			}
+		}
+	}
+	.office-data{
+		left: auto;
+		right: 80px;
+	}
+	.map{
+
+	}
 }
 /*768*/
 @media(max-width: 767px){
 	.logo img,
 	.main-screen__descr .h1::before,
 	.btn .ico,
-	.features-section-ico-wrapper{
+	.features-section-ico-wrapper,
+	.girl{
 		display: none;
 	}
 	.logo{
@@ -824,6 +891,17 @@
 	.title .h2{
 		font-size: 30px;
 	}
+	.office-data{
+		position: relative;
+		right: 0;
+		margin: 0 auto 40px;
+	}
+	.map-body{
+		display: none;
+	}
+	.map-container .for-mobile .office-list{
+		width: 90%;
+	}
 }
 /*767*/ 
 @media(max-width: 480px){
@@ -874,6 +952,9 @@
 		padding: 0 80px;
 		text-align: center;
 		line-height: 1.4;
+	}
+	.policy-text .h2{
+		font-size: 28px;
 	}
 }
 /*480*/ 
@@ -1022,5 +1103,29 @@
 	}
 	.price-slider .prev-arrow{
 		left: 10px;
+	}
+	.office-cities{
+		max-height: 400px;
+		overflow-y: auto;
+		width: 100%;
+		li{
+			width: 100%;
+		}
+	}
+	.office-list{
+		padding: 15px;
+	}
+	.office-list__top{
+		font-size: 16px;
+		text-align: center;
+		font-weight: 700;
+	}
+	.office-list::after{
+		border-width: 8px;
+		left: -8px;
+		top: -8px;
+	}
+	.map-container .for-mobile .office-list{
+		width: 100%;
 	}
 }

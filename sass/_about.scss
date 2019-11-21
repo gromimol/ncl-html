@@ -106,16 +106,33 @@
 }
 
 .review{
+	position: relative;
 	.block-title{
 		margin-bottom: 5em;
+		position: relative;
+		z-index: 2;
+	}
+	.container{
+		position: relative;
 	}
 }
+.girl{
+	position: absolute;
+	top: 0;
+	left: -8em;
+	transform: translateY(-40%);
+	width: 24em;
+}
 .review-content{
+	position: relative;
+	z-index: 2;
 }
 .review-row{
-	margin: 0 -1em;	
+	margin: 0 -1em 1em;	
 	width: 100%;
-	margin-bottom: 3em;
+	&.hidden{
+		display: none;
+	}
 }
 .review-body{
 	width: 25%;
@@ -128,10 +145,12 @@
 	width: 100%;
 	height: 27.5em;
 	background:transparent url('../img/White_Frame.png') center top no-repeat;
+	background-size: contain;
 	box-shadow: 0 10px 20px -5px rgba(#000, .25);
 	img{
 		width: 17.125em;
-		height: 24.375em;
+		height: 25em;
+		object-fit: cover;
 	}
 	&:hover{
 		box-shadow: 0 25px 30px -15px rgba(#000, .35);
@@ -148,12 +167,17 @@
 	padding: 1.44em 1.44em 1.2em;
 	min-width: 22.77em;
 	text-align: center;
+	margin-top: 3em;
 	margin-bottom: 3em;
 	&:hover{
 		background-color: var(--blue);
 		color: #fff;
 		border-color: var(--blue);
 	}
+}
+.opacity{
+	opacity: 0;
+	visibility: hidden;
 }
 
 

@@ -144,7 +144,7 @@
 		visibility: visible;
 		transform: translateX(0);
 		.book-lg{
-			animation: scale ease-in-out .3s;
+			animation: scale2 ease-in-out .3s;
 			animation-fill-mode: forwards;
 			animation-delay: .3s;
 		}
@@ -216,7 +216,48 @@
 	}
 }
 
-@keyframes scale{
+.policy-popup{
+	position: fixed;
+	width: 80%;
+	height: 100vh;
+	max-height: 80vh;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow-y: auto;
+	z-index: 30;
+	background-color: #fff;
+	padding: 50px 0;
+	display: none;
+	&.active{
+		display: block;
+	}
+	.close{
+		position: absolute;
+		top: 10px;
+		right: 10px;
+		cursor: pointer;
+	}
+}
+.policy-text{
+	font-size: 16px;
+	line-height: 1.5;
+	.h2{
+		font-size: 36px;
+		margin-bottom: 1em;
+	}
+	p{
+		margin-bottom: 1em;
+	}
+	a{
+		color: var(--blue);
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+
+@keyframes scale2{
 	0%{
 		transform: scale(0);
 	}

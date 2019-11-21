@@ -126,11 +126,11 @@
 	}
 	.prev-arrow{
 		left: 30px;
-		background-image: url('../img/icons/arrow_left.png');
+		background-image: url('../img/icons/left_arrow.svg');
 	}
 	.next-arrow{
 		right: 30px;
-		background-image: url('../img/icons/arrow_right.png');
+		background-image: url('../img/icons/right_arrow.svg');
 	}
 }
 .price-slider__table{
@@ -165,6 +165,11 @@
 	.blue{
 		color: #0e71b8;
 		font-size: 1.125em;
+	}
+}
+.value{
+	.blue{
+		font-weight: 700;
 	}
 }
 

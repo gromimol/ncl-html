@@ -718,7 +718,8 @@
 	.logo{
 		width: 62px;
 		height: 48px;
-		background:transparent url('../img/logo_simple.png') left top no-repeat;
+		background:transparent url('../img/logo-simple.svg') left top no-repeat;
+		background-size: contain;
 	}
 	.header__contact{
 		font-size: 14px;

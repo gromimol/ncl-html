@@ -29,7 +29,7 @@ $(document).ready(function () {
 		$('#overlay').hide();
 		$('body').removeClass('noscroll');
 		$('.mobile-menu').removeClass('active');
-	})
+	});
 
 	$('#overlay, .close, .close-popup').on('click',function () {
 		$('body').removeClass('noscroll');
